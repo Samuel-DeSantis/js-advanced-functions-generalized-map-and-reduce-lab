@@ -1,7 +1,5 @@
 function iterator (arr, task, start=0) {
-    arr.slice(start).forEach( item => {
-        task(item)
-    })
+    arr.slice(start).forEach( item => task(item))
 }
 
 function map (arr, f) {
@@ -21,6 +19,3 @@ function reduce (arr, f, start) {
     }
     return total
 }
-
-
-// iterator(arr, f, [], () => {temp.push(f(item))} )
